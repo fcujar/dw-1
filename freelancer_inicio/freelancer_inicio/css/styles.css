@@ -9,6 +9,11 @@
 
 html{
     font-size: 62.5%; /*1rem = 10px*/
+    box-sizing: border-box;      
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body{
@@ -84,3 +89,12 @@ span{
     background-color: var(--primario);
 }
 
+
+
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+
+}
