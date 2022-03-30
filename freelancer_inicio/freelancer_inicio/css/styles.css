@@ -21,9 +21,19 @@ body{
     font-family: 'Krub', sans-serif;
 }
 
-.titulo{
+h1{
+    font-size:3.8rem;
+}
+
+h2{
+    font-size:2.8rem;
+}
+
+h3{
+    font-size:1.8rem;
+}
+h1,h2,h3{
     text-align: center;
-    font-size: 3.8rem;
 }
 
 .titulo span{
@@ -95,6 +105,44 @@ span{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px;
+    /* padding: 20px; */
+    height: 450px;
+    position: relative;
 
+
+
+}
+
+
+
+.contenido-hero{
+    position: absolute;
+    
+    /*hace lo mismo que la orden de abajo*/
+    /* background-color: rgba(0,0,0,.6); */ 
+    
+    background-color: rgb(0 0 0 / 60%);
+    width: 100%;
+    height: 100%;
+    
+    /* estas ordenes posicionan todo un "cuadro" desde arriba, abajo, izq y der. SI solo le colocase top 0 deja arriba las propiedades que se colocó en esta clase, pero como se coloca top, bottom, left y right, entonces aplica para todos los lados formando un cuadro */
+
+    /* top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2, .contenido-hero p{
+    color:var(--blanco)
+}
+
+.ubicacion{
+    display: flex;
+    align-items: flex-end; 
+    
 }
