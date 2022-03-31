@@ -5,6 +5,7 @@
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris: #757575;
+    --grisClaro: #dfe9f3;
 }
 
 html{
@@ -19,7 +20,10 @@ html{
 body{
     font-size: 16px; /*1rem = 10px*/
     font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+    /* background-image: linear-gradient(to bottom, var(--grisClaro) 0%, var(--blanco) 100%); */
 }
+
 
 h1{
     font-size:3.8rem;
@@ -113,8 +117,6 @@ span{
 
 }
 
-
-
 .contenido-hero{
     position: absolute;
     
@@ -146,3 +148,47 @@ span{
     align-items: flex-end; 
     
 }
+
+.boton{
+    color: var(--blanco);
+    text-decoration:none;
+    background-color: var(--secundario);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    width:90%;
+    text-align: center;
+    font-size:2rem
+
+}
+
+@media (min-width: 500px) {
+    .boton{
+        width: auto;       
+    }
+}
+
+
+.sombra{
+    -webkit-box-shadow: -1px 3px 22px 7px rgba(110,110,110,1);
+    -moz-box-shadow: -1px 3px 22px 7px rgba(110,110,110,1);
+    box-shadow: -1px 3px 22px 7px rgba(110,110,110,1);
+    padding: 2rem;
+    border-radius:1rem;
+}
+
+@media (min-width: 768px) {
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        /* estas 3 ordenes son iguales a la anterior orden */
+    
+        /* grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid: 1 / 1fr 1fr 1fr; */
+    }
+}
+
