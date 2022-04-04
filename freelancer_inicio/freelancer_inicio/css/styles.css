@@ -160,7 +160,8 @@ span{
     text-transform: uppercase;
     width:90%;
     text-align: center;
-    font-size:2rem
+    font-size:2rem;
+    border:none;
 
 }
 
@@ -170,6 +171,9 @@ span{
     }
 }
 
+.boton:hover{
+    cursor: pointer;
+}
 
 .sombra{
     -webkit-box-shadow: -1px 3px 22px 7px rgba(110,110,110,1);
@@ -227,3 +231,65 @@ span{
     border-radius: 50%;
 
 }
+
+
+/* Contacto */
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem,100%);
+    border-radius: 5rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.formulario fieldset
+{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario fieldset legend{
+    color: var(--primario);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+
+
+.contenedor-campos
+{
+
+}
+
+.campo
+{
+    margin: 1 rem;
+}
+
+.campo label
+{
+    color:var(--blanco);
+    font-weight: bold;
+    margin: 1rem;
+    display: block;
+}
+
+.campo textarea
+{
+    height: 15rem;
+}
+
+.input-textarea
+{
+    width: 100%;
+    border: none;
+    padding:1.5rem;
+    border-radius: .5rem;
+}
+
+
